@@ -1,9 +1,9 @@
-Binaries
-DerivedDataCache
-Intermediate
-Saved
-.vscode
-.vs
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vscode/
+.vs/
 *.VC.db
 *.opensdf
 *.opendb
@@ -12,3 +12,7 @@ Saved
 *.suo
 *.xcodeproj
 *.xcworkspace
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+.DS_Store
+Thumbs.db
