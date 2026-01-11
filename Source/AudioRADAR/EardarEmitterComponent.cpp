@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "Eardar/EardarEmitterComponent.h"
+#include "EardarEmitterComponent.h"
 #include "Components/AudioComponent.h"
 
 UEardarEmitterComponent::UEardarEmitterComponent()
