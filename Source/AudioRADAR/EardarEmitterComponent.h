@@ -12,7 +12,7 @@
  * You can set its profile via DataTable lookup (by SoundTag) or override fields here.
  */
 UCLASS(ClassGroup=(Audio), meta=(BlueprintSpawnableComponent))
-class YOURGAME_API UEardarEmitterComponent : public UActorComponent
+class AUDIORADAR_API UEardarEmitterComponent : public UActorComponent
 {
     GENERATED_BODY()
 
