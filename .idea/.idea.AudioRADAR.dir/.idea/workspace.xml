@@ -7,13 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ffbf16a-30ef-4450-b6a3-fd98270122c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/AudioRADAR/EardarManager.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/AudioRADAR/EardarManager.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/AudioRADAR/EardarRadarWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/AudioRADAR/EardarRadarWidget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AudioRADAR.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AudioRADAR.dir/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5ffbf16a-30ef-4450-b6a3-fd98270122c8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +132,7 @@
       <option name="presentableId" value="Default" />
       <updated>1768119567293</updated>
       <workItem from="1768119570474" duration="1963000" />
-      <workItem from="1768215832056" duration="690000" />
+      <workItem from="1768215832056" duration="798000" />
     </task>
     <servers />
   </component>
