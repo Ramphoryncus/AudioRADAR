@@ -16,3 +16,5 @@ Plugins/*/Binaries/
 Plugins/*/Intermediate/
 .DS_Store
 Thumbs.db
+*.xcworkspace/**
+xcuserdata/
