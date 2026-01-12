@@ -18,3 +18,4 @@ Plugins/*/Intermediate/
 Thumbs.db
 *.xcworkspace/**
 xcuserdata/
+.idea/
