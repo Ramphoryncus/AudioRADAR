@@ -8,6 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ffbf16a-30ef-4450-b6a3-fd98270122c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Widgets/WBP_EardarRadar.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/0/VV/S3V5KMGQ0Y1T0R59E0IKIC.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AudioRADAR.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AudioRADAR.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +129,7 @@
       <updated>1768119567293</updated>
       <workItem from="1768119570474" duration="1963000" />
       <workItem from="1768215832056" duration="798000" />
-      <workItem from="1768219394330" duration="634000" />
+      <workItem from="1768219394330" duration="4336000" />
     </task>
     <servers />
   </component>
