@@ -7,7 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ffbf16a-30ef-4450-b6a3-fd98270122c8" name="Changes" comment="" />
+    <list default="true" id="5ffbf16a-30ef-4450-b6a3-fd98270122c8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AudioRADAR.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AudioRADAR.dir/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,14 +117,6 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration default="true" type="Uproject" factoryName="rider.uproject">
-      <option name="DEFAULT_PROJECT_PATH" value="" />
-      <option name="PROJECT_FILE_PATH" value="" />
-      <option name="AUTO_SELECT_PRIORITY" value="0" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -133,6 +127,7 @@
       <updated>1768119567293</updated>
       <workItem from="1768119570474" duration="1963000" />
       <workItem from="1768215832056" duration="798000" />
+      <workItem from="1768219394330" duration="634000" />
     </task>
     <servers />
   </component>
