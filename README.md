@@ -88,8 +88,16 @@ The prototype currently demonstrates:
 The N/S/E/W glyphs are deliberately simple development placeholders used to make the behaviour of individual test emitters easy to identify.
 
 ---
+
+# Software Architecture
+
+The planned E.A.R.D.A.R. software architecture and relationship between the major system components is documented in the following Figma diagram:
+
 [Figma software Architecture Diagram](https://www.figma.com/board/OZpTkQ9uJaijjUFIh3gBIR/EARDAR-SADiagram?node-id=0-1&p=f)
 
+The architecture separates sound/emitter configuration, perceptibility processing and visual presentation so that the underlying E.A.R.D.A.R. concept can be adapted across different game engines.
+
+---
 
 # Unreal Engine Source
 
