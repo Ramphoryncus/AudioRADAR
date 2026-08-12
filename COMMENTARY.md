@@ -23,3 +23,18 @@ No Actor in scene, it shows 0 as there is no target for WBP_EardarRadar to regis
 <img width="251" height="330" alt="image" src="https://github.com/user-attachments/assets/0297f38d-c8b5-44eb-9cd3-eaa9e0c7b018" />
 
 With Actor in scene assigned with EardarEmitterComponent from C++, it now shows 1.
+
+### Functional WBP_EardarRadar Blueprint
+
+<img width="2086" height="633" alt="image" src="https://github.com/user-attachments/assets/ff632df0-da4d-4c7d-b03b-9b033d17e6e2" />
+
+
+### Testing Blueprint maths for Bearing Degrees and Normalised Radius
+
+<img width="360" height="565" alt="image" src="https://github.com/user-attachments/assets/d04f4e2b-3990-4f13-bdb7-3116ae50746f" />
+
+There were some issues with the blips showing at the bottom of the screen the solution was to change the WBP_EardarBlip Canvas to a Size Box which resulted in the glyphs moving to the centre of the screen
+
+<img width="351" height="374" alt="image" src="https://github.com/user-attachments/assets/d61e42d7-ceb6-4682-bd2e-d2e53a868512" />
+
+
