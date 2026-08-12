@@ -88,6 +88,8 @@ The prototype currently demonstrates:
 The N/S/E/W glyphs are deliberately simple development placeholders used to make the behaviour of individual test emitters easy to identify.
 
 ---
+[Figma software Architecture Diagram](https://www.figma.com/board/OZpTkQ9uJaijjUFIh3gBIR/EARDAR-SADiagram?node-id=0-1&p=f)
+
 
 # Unreal Engine Source
 
