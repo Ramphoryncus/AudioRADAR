@@ -1,88 +1,191 @@
 ﻿// Minimal, engine-agnostic types and data definitions for E.A.R.D.A.R.
-// Put in Public/ so other modules/classes can include it.
+// Place in Public/ so other modules and classes can include it.
 
 #pragma once
+
 #include "CoreMinimal.h"
 #include "Engine/DataTable.h"
 #include "GameplayTagContainer.h"
 #include "EardarTypes.generated.h"
 
-// High-level sound categories you care about. You can also rely purely on GameplayTags.
+/**
+ * @enum EEardarCategory
+ * @brief Defines the high-level sound categories recognised by E.A.R.D.A.R.
+ *
+ * These categories provide a simple way to group sound sources for
+ * visualisation and prioritisation. Gameplay Tags can also be used
+ * for more detailed sound classification.
+ */
 UENUM(BlueprintType)
 enum class EEardarCategory : uint8
 {
-    Footstep     UMETA(DisplayName="Footstep"),
-    Gunshot      UMETA(DisplayName="Gunshot"),
-    Explosion    UMETA(DisplayName="Explosion"),
-    Vehicle      UMETA(DisplayName="Vehicle"),
-    Voice        UMETA(DisplayName="Voice"),
-    Ambient      UMETA(DisplayName="Ambient"),
-    Custom       UMETA(DisplayName="Custom")
+    Footstep  UMETA(DisplayName="Footstep"),
+    Gunshot   UMETA(DisplayName="Gunshot"),
+    Explosion UMETA(DisplayName="Explosion"),
+    Vehicle   UMETA(DisplayName="Vehicle"),
+    Voice     UMETA(DisplayName="Voice"),
+    Ambient   UMETA(DisplayName="Ambient"),
+    Custom    UMETA(DisplayName="Custom")
 };
 
-// Row for a DataTable that configures how each category/tag behaves on the radar.
-// You can author this in a CSV and create a DataTable asset from it.
+/**
+ * @struct FEardarProfileRow
+ * @brief Configurable profile describing how a sound behaves on the E.A.R.D.A.R. radar.
+ *
+ * This structure can be used as a row type for an Unreal Engine DataTable.
+ * Each row defines characteristics such as loudness, effective range,
+ * occlusion response, persistence, priority and icon selection.
+ *
+ * Profiles may be associated with specific sounds through Gameplay Tags.
+ */
 USTRUCT(BlueprintType)
 struct FEardarProfileRow : public FTableRowBase
 {
     GENERATED_BODY()
 
-    // Optional tag lookup (e.g., "Sound.Explosion", "Sound.Footstep")
+    /**
+     * @brief Gameplay Tag associated with this sound profile.
+     *
+     * Example values include "Sound.Explosion" or "Sound.Footstep".
+     */
     UPROPERTY(EditAnywhere, BlueprintReadOnly)
     FGameplayTag SoundTag;
 
-    // Category (redundant but handy for quick switches)
+    /**
+     * @brief High-level category assigned to this sound profile.
+     *
+     * Provides a simple category value alongside the more detailed Gameplay Tag.
+     */
     UPROPERTY(EditAnywhere, BlueprintReadOnly)
     EEardarCategory Category = EEardarCategory::Custom;
 
-    // Proxy for "how loud in general" (0..1)
+    /**
+     * @brief General loudness value used when calculating audibility.
+     *
+     * Acts as a simplified proxy for the typical loudness of the sound.
+     * Expected range is 0.0 to 1.0.
+     */
     UPROPERTY(EditAnywhere, BlueprintReadOnly, meta=(ClampMin="0.0", ClampMax="1.0"))
     float BaseLoudness = 0.7f;
 
-    // Hard cut-off range for icon eligibility (meters)
+    /**
+     * @brief Maximum effective distance at which the sound can generate a radar blip.
+     *
+     * The value is specified in metres. Sounds beyond this distance are ignored.
+     */
     UPROPERTY(EditAnywhere, BlueprintReadOnly, meta=(ClampMin="1.0"))
     float MaxEffectiveRangeM = 150.f;
 
-    // How much occlusion reduces the score (0 = no effect, 1 = fully muted)
+    /**
+     * @brief Amount by which occlusion reduces the sound's audibility.
+     *
+     * A value of 0.0 applies no penalty, while 1.0 represents complete
+     * suppression when the sound is occluded.
+     */
     UPROPERTY(EditAnywhere, BlueprintReadOnly, meta=(ClampMin="0.0", ClampMax="1.0"))
     float OcclusionPenalty = 0.35f;
 
-    // Time the blip lingers after falling below threshold
+    /**
+     * @brief Duration for which a blip may remain visible after becoming inaudible.
+     *
+     * The value is expressed in seconds.
+     */
     UPROPERTY(EditAnywhere, BlueprintReadOnly, meta=(ClampMin="0.0"))
     float PersistenceSeconds = 0.6f;
 
-    // Used when too many icons compete
+    /**
+     * @brief Priority used when multiple radar blips compete for display.
+     *
+     * Higher-priority sounds can be retained when the number of active blips
+     * exceeds the configured display limit.
+     */
     UPROPERTY(EditAnywhere, BlueprintReadOnly)
     int32 Priority = 50;
 
-    // If true, hide/fade when on-screen & close (because player can already see it)
+    /**
+     * @brief Determines whether the blip should be reduced when the source is visible.
+     *
+     * When enabled, the radar may hide or fade nearby sounds that are already
+     * clearly visible to the player.
+     */
     UPROPERTY(EditAnywhere, BlueprintReadOnly)
     bool bOnScreenSuppression = true;
 
-    // Name of icon in your widget (you can map this to a texture/sprite in BP)
+    /**
+     * @brief Identifier used by the radar widget to select a visual icon.
+     *
+     * The identifier can be mapped to a texture, sprite or other visual
+     * representation in Blueprint.
+     */
     UPROPERTY(EditAnywhere, BlueprintReadOnly)
     FName IconId = TEXT("Default");
 };
 
-// Data passed to the UI each frame for a single blip
+/**
+ * @struct FEardarBlip
+ * @brief Runtime data representing a single sound source on the E.A.R.D.A.R. radar.
+ *
+ * Instances of this structure are generated by the radar manager and passed
+ * to the user interface each frame. The structure contains both world-space
+ * source information and values already prepared for radar visualisation.
+ */
 USTRUCT(BlueprintType)
 struct FEardarBlip
 {
     GENERATED_BODY()
 
-    // World-space info (if your widget wants it)
-    UPROPERTY(BlueprintReadOnly) FVector WorldLocation = FVector::ZeroVector;
+    /**
+     * @brief World-space position of the sound source.
+     */
+    UPROPERTY(BlueprintReadOnly)
+    FVector WorldLocation = FVector::ZeroVector;
 
-    // Polar UI info (computed relative to the player/camera)
-    UPROPERTY(BlueprintReadOnly) float BearingDeg = 0.f;  // -180..180 (0 = forward)
-    UPROPERTY(BlueprintReadOnly) float NormalizedRadius = 0.f; // 0 center .. 1 outer ring
+    /**
+     * @brief Horizontal bearing of the sound relative to the player or camera.
+     *
+     * Measured in degrees from -180 to 180, where 0 represents directly forward.
+     */
+    UPROPERTY(BlueprintReadOnly)
+    float BearingDeg = 0.f;
 
-    // Visuals
-    UPROPERTY(BlueprintReadOnly) FName IconId = TEXT("Default");
-    UPROPERTY(BlueprintReadOnly) float Alpha = 1.f;       // opacity based on audibility
-    UPROPERTY(BlueprintReadOnly) int32 Priority = 0;      // for sorting
+    /**
+     * @brief Normalised radial distance used by the radar interface.
+     *
+     * A value of 0 represents the centre of the radar and 1 represents
+     * the outer edge.
+     */
+    UPROPERTY(BlueprintReadOnly)
+    float NormalizedRadius = 0.f;
 
-    // Bookkeeping
-    UPROPERTY(BlueprintReadOnly) FGameplayTag SoundTag;
-    UPROPERTY(BlueprintReadOnly) EEardarCategory Category = EEardarCategory::Custom;
+    /**
+     * @brief Identifier used to select the icon displayed for this blip.
+     */
+    UPROPERTY(BlueprintReadOnly)
+    FName IconId = TEXT("Default");
+
+    /**
+     * @brief Opacity or visual intensity of the radar blip.
+     *
+     * This is typically derived from the calculated audibility of the sound.
+     */
+    UPROPERTY(BlueprintReadOnly)
+    float Alpha = 1.f;
+
+    /**
+     * @brief Priority value used when sorting competing radar blips.
+     */
+    UPROPERTY(BlueprintReadOnly)
+    int32 Priority = 0;
+
+    /**
+     * @brief Gameplay Tag identifying the sound represented by this blip.
+     */
+    UPROPERTY(BlueprintReadOnly)
+    FGameplayTag SoundTag;
+
+    /**
+     * @brief High-level sound category associated with this blip.
+     */
+    UPROPERTY(BlueprintReadOnly)
+    EEardarCategory Category = EEardarCategory::Custom;
 };

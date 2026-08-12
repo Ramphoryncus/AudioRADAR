@@ -8,13 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ffbf16a-30ef-4450-b6a3-fd98270122c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/BP_EardarTestEmitter.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/2G/AIOJ0Y7TT3JVMQU712Q95M.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/2/JS/PLQQICFZV30WPQWJUN7NGA.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/8D/TUMWKDE0AMW9CATVY4LYFA.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/G3/GI4FGK05Z4N0P7DFOYI20L.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AudioRADAR.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AudioRADAR.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Lvl_ThirdPerson.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Lvl_ThirdPerson.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Widgets/WBP_EardarBlip.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/WBP_EardarBlip.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Widgets/WBP_EardarRadar.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/WBP_EardarRadar.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/AudioRADAR/EardarEmitterComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/AudioRADAR/EardarEmitterComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/AudioRADAR/EardarEmitterComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/AudioRADAR/EardarEmitterComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/AudioRADAR/EardarTypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/AudioRADAR/EardarTypes.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://D:/epic games/UE_5.6/Engine/Source/Runtime/UMG/Private/Components/RichTextBlock.cpp" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -136,12 +143,14 @@
       <workItem from="1768219394330" duration="4336000" />
       <workItem from="1774529234711" duration="4224000" />
       <workItem from="1786499932059" duration="1131000" />
+      <workItem from="1786510543946" duration="1517000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
