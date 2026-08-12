@@ -78,6 +78,17 @@ Spatial Blip Data
 Visual HUD
 ```
 
+
+### Software Architecture Diagram
+
+As part of the initial technical planning, I produced a software architecture diagram to visualise the proposed relationship between E.A.R.D.A.R.'s major components and responsibilities.
+
+[Figma software Architecture Diagram](https://www.figma.com/board/OZpTkQ9uJaijjUFIh3gBIR/EARDAR-SADiagram?node-id=0-1&p=f)
+
+The diagram was used as a planning tool for separating the sound-emitter layer, central processing system and HUD representation before these concepts were translated into the engine-specific Unity and Unreal implementations.
+
+---
+
 Initially I considered analysing audio directly and potentially using automatic classification to determine whether a sound represented footsteps, gunfire, vehicles or other events.
 
 This approach would have introduced substantial complexity. Audio classification would require either signal-processing heuristics or a machine-learning solution and would make the behaviour of the system harder to predict.
