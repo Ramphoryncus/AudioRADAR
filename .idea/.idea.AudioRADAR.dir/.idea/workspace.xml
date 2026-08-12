@@ -8,7 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ffbf16a-30ef-4450-b6a3-fd98270122c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/BP_EardarTestEmitter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AudioRADAR.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AudioRADAR.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/ThirdPerson/Lvl_ThirdPerson.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPerson/Lvl_ThirdPerson.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/WBP_EardarBlip.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/WBP_EardarBlip.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Widgets/WBP_EardarRadar.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Widgets/WBP_EardarRadar.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/AudioRADAR/EardarEmitterComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/AudioRADAR/EardarEmitterComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/AudioRADAR/EardarEmitterComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/AudioRADAR/EardarEmitterComponent.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +55,10 @@
         <option name="CONFIGURATION" value="DebugGame Editor" />
         <option name="PLATFORM" value="Win64" />
         <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="C:\Program Files\Epic Games\5.6\Engine\Binaries\Win64\UnrealEditor-Win64-DebugGame.exe" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\UCA Files and Folders\UnrealStuff\AudioRADAR\AudioRADAR.uproject&quot;" />
+        <option name="EXECUTABLE_PATH" value="D:/epic games/UE_5.6/Engine/Binaries/Win64/UnrealEditor-Win64-DebugGame.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;F:\UCA Files and Folders\UnrealStuff\AudioRADAR\AudioRADAR.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="C:\Program Files\Epic Games\5.6" />
+        <option name="WORKING_DIRECTORY" value="D:\epic games\UE_5.6" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="1" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
@@ -62,10 +68,10 @@
         <option name="CONFIGURATION" value="DebugGame" />
         <option name="PLATFORM" value="Win64" />
         <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="E:\UCA Files and Folders\UnrealStuff\AudioRADAR\Binaries\Win64\AudioRADAR-Win64-DebugGame.exe" />
+        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/Binaries/Win64/AudioRADAR-Win64-DebugGame.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="C:\Program Files\Epic Games\5.6" />
+        <option name="WORKING_DIRECTORY" value="D:\epic games\UE_5.6" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="1" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
@@ -75,10 +81,10 @@
         <option name="CONFIGURATION" value="Development Editor" />
         <option name="PLATFORM" value="Win64" />
         <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="C:\Program Files\Epic Games\5.6\Engine\Binaries\Win64\UnrealEditor.exe" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;E:\UCA Files and Folders\UnrealStuff\AudioRADAR\AudioRADAR.uproject&quot;" />
+        <option name="EXECUTABLE_PATH" value="D:/epic games/UE_5.6/Engine/Binaries/Win64/UnrealEditor.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;F:\UCA Files and Folders\UnrealStuff\AudioRADAR\AudioRADAR.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="C:\Program Files\Epic Games\5.6" />
+        <option name="WORKING_DIRECTORY" value="D:\epic games\UE_5.6" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="1" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
@@ -88,10 +94,10 @@
         <option name="CONFIGURATION" value="Development" />
         <option name="PLATFORM" value="Win64" />
         <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="E:\UCA Files and Folders\UnrealStuff\AudioRADAR\Binaries\Win64\AudioRADAR.exe" />
+        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/Binaries/Win64/AudioRADAR.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="C:\Program Files\Epic Games\5.6" />
+        <option name="WORKING_DIRECTORY" value="D:\epic games\UE_5.6" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="1" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
@@ -101,10 +107,10 @@
         <option name="CONFIGURATION" value="Shipping" />
         <option name="PLATFORM" value="Win64" />
         <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="E:\UCA Files and Folders\UnrealStuff\AudioRADAR\Binaries\Win64\AudioRADAR-Win64-Shipping.exe" />
+        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/Binaries/Win64/AudioRADAR-Win64-Shipping.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="C:\Program Files\Epic Games\5.6" />
+        <option name="WORKING_DIRECTORY" value="D:\epic games\UE_5.6" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="1" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
@@ -129,6 +135,7 @@
       <workItem from="1768215832056" duration="798000" />
       <workItem from="1768219394330" duration="4336000" />
       <workItem from="1774529234711" duration="4224000" />
+      <workItem from="1786499932059" duration="1131000" />
     </task>
     <servers />
   </component>
