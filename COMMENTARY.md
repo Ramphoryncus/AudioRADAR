@@ -37,4 +37,18 @@ There were some issues with the blips showing at the bottom of the screen the so
 
 <img width="351" height="374" alt="image" src="https://github.com/user-attachments/assets/d61e42d7-ceb6-4682-bd2e-d2e53a868512" />
 
+### Final functional WBP_EardarRadar
+
+<img width="1993" height="637" alt="image" src="https://github.com/user-attachments/assets/adf8b77b-2cdb-4621-82b5-813aad73ba8b" />
+
+
+### Evidence of Glyph rotation on camera movement
+
+Icon Id Override was used to change the letters form F's to N, S, E, W.
+
+<img width="495" height="365" alt="image" src="https://github.com/user-attachments/assets/38020fa8-fb7a-4e4d-943d-c53afbbd0f00" />
+<img width="383" height="389" alt="image" src="https://github.com/user-attachments/assets/1855734c-5612-4877-9323-25a149574718" />
+
+
+
 
