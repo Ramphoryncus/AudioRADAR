@@ -627,6 +627,13 @@ Approximately how far away is it?
 
 The final prototype therefore establishes a functioning basis for directional and distance-based visualisation.
 
+
+### Video Evidence — Functional E.A.R.D.A.R. Prototype
+
+The following video demonstrates the Unreal Engine 5.6.1 prototype running in Play In Editor. Four test emitters labelled N, S, E and W are positioned around the player. As the camera rotates and the player moves, the corresponding HUD glyphs update their positions using the calculated bearing and normalised radial distance.
+
+https://github.com/user-attachments/assets/facdbbc5-73cc-4c10-a9d6-9d38490d1ad9
+
 ---
 
 # Gameplay Tags and Profiles
