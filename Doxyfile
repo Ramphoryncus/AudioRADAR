@@ -1,0 +1,33 @@
+PROJECT_NAME           = "E.A.R.D.A.R."
+PROJECT_BRIEF          = "Environmental Audio Real-Time Detection And Ranging"
+
+OUTPUT_DIRECTORY       = docs/_site
+CREATE_SUBDIRS         = NO
+
+INPUT                  = Source README.md
+FILE_PATTERNS          = *.h *.hpp *.c *.cpp *.md
+RECURSIVE              = YES
+
+EXCLUDE                = Binaries Intermediate Saved DerivedDataCache .vs .vscode
+EXCLUDE_PATTERNS       = */Plugins/* */ThirdParty/*
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = .
+GENERATE_LATEX         = NO
+
+USE_MDFILE_AS_MAINPAGE = README.md
+MARKDOWN_SUPPORT       = YES
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
